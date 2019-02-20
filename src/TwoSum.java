@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +11,7 @@ import java.util.Map;
  *  所以返回[0, 1]
  */
 
-public class twoSum {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -30,7 +29,7 @@ public class twoSum {
     public static void main(String[] args) {
         int[] nums = {3, 2, 4};
         int target = 6;
-        int[] res = new twoSum().twoSum(nums, target);
+        int[] res = new TwoSum().twoSum(nums, target);
         for (int i: res) {
             System.out.println(i);
         }

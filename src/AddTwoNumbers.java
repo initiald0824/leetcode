@@ -17,7 +17,7 @@ class ListNode {
 }
 
 
-public class addTwoNumbers {
+public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode head = new ListNode(carry);
@@ -68,7 +68,7 @@ public class addTwoNumbers {
         int[] b = new int[] {5, 6, 4};
         ListNode l1 = create(a);
         ListNode l2 = create(b);
-        ListNode res = new addTwoNumbers().addTwoNumbers(l1, l2);
+        ListNode res = new AddTwoNumbers().addTwoNumbers(l1, l2);
         print(res);
     }
 }
