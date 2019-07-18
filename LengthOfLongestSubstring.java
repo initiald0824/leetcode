@@ -22,8 +22,8 @@ public class LengthOfLongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         int maxLength = 0;
         int start = 0;
-        Map<Character, Integer> characterPosition = new HashMap<>();
-        int i = 0;
+        Map<Character, Integer> characterPosition = new HashMap<>(s.length());
+        int i;
         for (i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (characterPosition.containsKey(c) && characterPosition.get(c) >= start) {
